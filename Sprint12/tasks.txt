@@ -1,0 +1,145 @@
+https://github.com/React-12-npm/tools-npm-AndyLisitsyn
+
+The tasks of the topic "npm"
+There is the file package.json
+
+Configure it to specify:
+
+List bootstrap as a production dependency
+List husky as a dev dependency
+Define two custom scripts - task1 runs the file script1.js and task2 runs the file script2.js
+
+https://github.com/React-12-webpack/tools-webpack-AndyLisitsyn
+
+The tasks of the topic "Webpack"
+There is the file webpack.config.js
+
+Configure it to specify:
+
+Define the path ./src/main.js as an entry property in your webpack configuration
+Your configuration should output a single build.js file into the pub directory
+
+https://github.com/React-12-babel/tools-babel-AndyLisitsyn
+
+The tasks of the topic "Babel"
+There is a simple project.
+
+Configure Babel for this project to compile files inside src, so that:
+
+Files are in root of the folder src won’t be changed after compilation
+All files that are in the folder src/lib will be compiled by Babel with the preset preset-env
+If you use any extras dependencies describe them in the package.json, as appropriate.
+
+https://github.com/React-12-eslint/tools-eslint-AndyLisitsyn
+
+The tasks of the topic "ESLint"
+There is some project.
+
+Implement a configuration of ESLint for this project to provide next rules:
+
+Enforce indent of 4 spaces
+
+incorrect code for this rule
+
+if (a) {
+ b = c;
+}
+correct code for this rule
+
+if (a) {
+    b = c;
+}
+Require spaces around operators
+
+incorrect code for this rule
+
+a=b+c;
+correct code for this rule
+
+a = b + c;
+Enforce the consistent use of single quotes
+
+incorrect code for this rule
+
+a = "double";
+correct code for this rule
+
+a = 'single';
+Require let or const instead of var
+
+incorrect code for this rule
+
+var a = 0;
+correct code for this rule
+
+let a = 0;
+Require const declarations for variables that are never reassigned after declared
+
+incorrect code for this rule
+
+let a = 'it`s initialized and never reassigned';
+correct code for this rule
+
+const a = 'it`s initialized and never reassigned';
+Enforce the use of === and !==
+
+incorrect code for this rule
+
+a == b
+сorrect code for this rule
+
+a === b
+Disallow the use of console
+
+incorrect code for this rule
+
+console.log("Some message");
+Disallow assignment operators in conditional expressions
+
+incorrect code for this rule
+
+if (a = 0) {
+  b = c;
+}
+сorrect code for this rule
+
+if (a === 0) {
+  b = c;
+}
+Disallow unnecessary semicolons
+
+incorrect code for this rule
+
+a = b;;
+сorrect code for this rule
+
+a = b;
+Disallow comments on the same line as code
+
+incorrect code for this rule
+
+a = 1; // a to 1
+сorrect code for this rule
+
+// a to 1
+a = 1;
+Disallow else blocks after return statements in if statements
+
+incorrect code for this rule
+
+function demo() {
+  if (a) {
+    return b;
+  } else {
+    return c;
+  }
+}
+сorrect code for this rule
+
+function demo() {
+  if (a) {
+    return b;
+  }
+  return c;
+}
+The last rule should be defined based on message of the autograding tests.
